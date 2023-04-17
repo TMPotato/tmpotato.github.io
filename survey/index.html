@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Forg Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<body>
+<header class="header">
+<h1 id="title" class="textcenter"> Da FORG Form</h1>
+    <p id="description" class="description text-center">
+      Do it for the forg!
+    </p>
+  </header>
+  </head>
+  <body>
+    <div class="form-group-wrapper">
+    <div class="container ">
+  
+  <form id="survey-form">
+ 
+     <div class="form-group center sectiontitle name topform">
+       <p id="" class="text"> Type your info below</p>
+
+  <label id="name-label" 
+  for="name">Name:</label>
+  
+  <input
+    type="text"
+    name="name"
+    id="name"
+    class="form-control Select"
+    placeholder="Enter your name"
+    required
+  />
+<div class="email-field">
+  <label id="email-label" for="email">Email:</label>
+  <input
+    type="email"
+    name="email"
+    id="email"
+    class="form-control Select emailbox"
+    placeholder="Enter your Email"
+    required
+  />
+
+   <div class="age-field">
+    <label id="number-label" for="number">Age:</label>
+    <input
+      type="number"
+      name="age"
+      id="number"
+      min="10"
+      max="122"
+      class="form-control Select"
+      placeholder="#"
+    />
+</div>
+</div>
+</div>
+    <div class="form-group center pick sectiontitle" >
+      <p>who is u?</p>
+      <select id="dropdown" name="role" class="form-control Select" required>
+        <option disabled selected value>pick one</option>
+        <option value="no">No</option>
+        <option value="potato">Potato</option>
+        <option value="forg">Forg</option>
+        <option value="none">none</option>
+        <option value="bog">bog</option>
+        <option value="human">human</option>
+        <option value="npc">npc</option>
+      </select>
+    </div>
+<script>
+  const frogIdleSound = new Audio("https://dl.sndup.net/mffr/Frog_idle1.ogg");
+  
+  document.getElementById("dropdown").addEventListener("change", function(event) {
+    if (event.target.value === "forg") {
+      frogIdleSound.play();
+    }
+  });
+
+  
+</script>
+    <div class="form-group center eat">
+      <p class="sectiontitle" >Would u eat potato?</p>
+      <label>
+        <input
+          name="select"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          
+        />Yes</label
+      >
+      <label>
+        <input
+          name="select"
+          value="HellYeah"
+          type="radio"
+          class="input-radio"
+        /> HELL YEAH !</label
+      >
+
+      <label
+        ><input
+          name="select"
+          value="no"
+          type="radio"
+          class="input-radio"
+        /> No :(</label
+      >
+    </div>
+ <div class="form-group center eat">
+      <p class="sectiontitle" >it ok eat forg?</p>
+      <label>
+        <input
+          name="selectforg"
+          value="NO"
+          type="radio"
+          class="input-radio"
+          
+        />NO</label
+      >
+      <label>
+        <input
+          name="selectforg"
+          value="No"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="selectforg"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />NOPE</label
+      >
+
+       <label
+        ><input
+          name="selectforg"
+          value="never"
+          type="radio"
+          class="input-radio"
+        /> Never</label
+      >
+       <label
+        ><input
+          name="selectforg"
+          value="no"
+          type="radio"
+          class="input-radio"
+        /> Ye (DONT U DARE)</label
+      >
+    </div>
+
+    <div class="form-group center fav">
+      <p class="sectiontitle" >
+        What is ur fav thing
+      </p>
+      <select id="most-like" name="mostLike" class="form-control Select" required>
+        <option disabled selected value>select one</option>
+         <option value="forg">🌟Forg🌟</option>
+        <option value="eg">Eg</option>
+        <option value="bog">Bog</option>
+        <option value="potato">Potato</option>
+        <option value="lemin">lemin</option>
+        <option value="somthingelse">somthin els</option>
+      </select>
+    </div>
+
+<script>
+  const frogIdleSound2 = new Audio("https://dl.sndup.net/mffr/Frog_idle1.ogg");
+  
+  document.getElementById("most-like").addEventListener("change", function(event) {
+    if (event.target.value === "forg") {
+      frogIdleSound.play();
+    }
+  });
+</script>
+
+    <div class="form-group pick">
+      <p class="center sectiontitle">
+        What would you loke for dinner?
+        <span class="clue">(click all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="forg"
+          type="checkbox"
+          class="input-checkbox"
+        />FORG?? (UR EVIL IF U PUT THIS)</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="potato"
+          type="checkbox"
+          class="input-checkbox"
+        />Potato</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="lemons"
+          type="checkbox"
+          class="input-checkbox"
+        />LEMONS</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="burger"
+          type="checkbox"
+          class="input-checkbox"
+        />Burgar</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="letuc"
+          type="checkbox"
+          class="input-checkbox"
+        />letuc</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="mcdonalds"
+          type="checkbox"
+          class="input-checkbox"
+        />McDonalds</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="elepant"
+          type="checkbox"
+          class="input-checkbox"
+        />Elepant</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="peas"
+          type="checkbox"
+          class="input-checkbox"
+        />Pea</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="doughnut"
+          type="checkbox"
+          class="input-checkbox"
+        />Doughnot</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="egg"
+          type="checkbox"
+          class="input-checkbox"
+        />Egg</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="prime"
+          type="checkbox"
+          class="input-checkbox"
+        />Prime</label
+      >
+    </div>
+<script>
+  const forgCheckbox = document.querySelector('input[value="forg"]');
+const frogSound = new Audio('https://dl.sndup.net/kqbr/Frog_death1.ogg');
+
+forgCheckbox.addEventListener('change', () => {
+  if (forgCheckbox.checked) {
+    frogSound.play();
+  }
+});
+</script>
+    <div class="form-group center essay">
+      <p class="sectiontitle">Write an essay on how forg is bog and cat is yes</p>
+      <textarea
+        id="essay"
+        class="input-textarea"
+        name="essay"
+        placeholder="Enter your essay here..."
+      ></textarea>
+  
+
+    <div class=" bottom center ">
+      <button type="submit" id="submit" class="submitButton">
+        SUBMIT
+        </button>
+
+    </div>
+
+  </div>
+
+    </form>
+    </div>
+ </div>
+  </body>
+</html>
+
+
